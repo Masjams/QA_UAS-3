@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231223 14:35:55.252" rpa="false" schemaversion="4">
+<suite id="s1" name="Test-Suite-1" source="C:\Users\FAHRUL\Desktop\basic-automation\project-demo\test-suite-1.robot">
+<test id="s1-t1" name="testcase-1" line="24">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 14:35:55.565" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231223 14:36:01.861" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231223 14:36:01.861" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</msg>
+<status status="FAIL" starttime="20231223 14:35:55.565" endtime="20231223 14:36:01.861"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:01.861" endtime="20231223 14:36:01.861"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:01.861" endtime="20231223 14:36:01.861"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:01.861" endtime="20231223 14:36:01.861"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:01.861" endtime="20231223 14:36:01.861"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:01.861" endtime="20231223 14:36:01.861"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:01.861" endtime="20231223 14:36:01.861"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:35:55.565" endtime="20231223 14:36:01.861"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:01.861" endtime="20231223 14:36:01.861"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:35:55.565" endtime="20231223 14:36:01.861">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</status>
+</test>
+<test id="s1-t2" name="testcase-2" line="29">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 14:36:01.871" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231223 14:36:07.948" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231223 14:36:07.948" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</msg>
+<status status="FAIL" starttime="20231223 14:36:01.871" endtime="20231223 14:36:07.948"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:07.948" endtime="20231223 14:36:07.948"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:07.948" endtime="20231223 14:36:07.948"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:07.948" endtime="20231223 14:36:07.948"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:07.948" endtime="20231223 14:36:07.948"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:07.948" endtime="20231223 14:36:07.948"/>
+</kw>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:07.948" endtime="20231223 14:36:07.948"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:07.948" endtime="20231223 14:36:07.948"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:36:01.870" endtime="20231223 14:36:07.948">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</status>
+</test>
+<test id="s1-t3" name="testcase-3" line="40">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 14:36:07.960" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231223 14:36:14.204" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231223 14:36:14.204" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</msg>
+<status status="FAIL" starttime="20231223 14:36:07.957" endtime="20231223 14:36:14.204"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:14.204" endtime="20231223 14:36:14.204"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:14.204" endtime="20231223 14:36:14.204"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:14.204" endtime="20231223 14:36:14.204"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:14.204" endtime="20231223 14:36:14.204"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:14.204" endtime="20231223 14:36:14.204"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:14.210" endtime="20231223 14:36:14.210"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:36:07.957" endtime="20231223 14:36:14.210"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='logout']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:14.211" endtime="20231223 14:36:14.211"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:14.211" endtime="20231223 14:36:14.211"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:14.213" endtime="20231223 14:36:14.213"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:36:07.957" endtime="20231223 14:36:14.213">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</status>
+</test>
+<test id="s1-t4" name="testcase-4" line="47">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 14:36:14.224" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231223 14:36:20.407" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231223 14:36:20.407" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</msg>
+<status status="FAIL" starttime="20231223 14:36:14.224" endtime="20231223 14:36:20.407"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.407" endtime="20231223 14:36:20.407"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.407" endtime="20231223 14:36:20.407"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:36:14.224" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/create']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='company']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:company</arg>
+<arg>${COMPANY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:title</arg>
+<arg>${TITLE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:location</arg>
+<arg>${LOCATION}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${JOBEMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:website</arg>
+<arg>${WEBSITE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:tags</arg>
+<arg>${TAGS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:description</arg>
+<arg>${DESCRIPTION}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='create']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.411" endtime="20231223 14:36:20.411"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:20.419" endtime="20231223 14:36:20.419"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:36:14.223" endtime="20231223 14:36:20.420">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</status>
+</test>
+<test id="s1-t5" name="testcase-5" line="62">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 14:36:20.428" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231223 14:36:26.661" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231223 14:36:26.663" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</msg>
+<status status="FAIL" starttime="20231223 14:36:20.426" endtime="20231223 14:36:26.663"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:26.664" endtime="20231223 14:36:26.664"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:26.664" endtime="20231223 14:36:26.664"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:26.665" endtime="20231223 14:36:26.665"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:26.665" endtime="20231223 14:36:26.665"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:26.665" endtime="20231223 14:36:26.665"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:26.665" endtime="20231223 14:36:26.665"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:36:20.426" endtime="20231223 14:36:26.665"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:26.666" endtime="20231223 14:36:26.666"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:26.667" endtime="20231223 14:36:26.667"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:26.668" endtime="20231223 14:36:26.668"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:36:20.426" endtime="20231223 14:36:26.669">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</status>
+</test>
+<test id="s1-t6" name="testcase-6" line="68">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 14:36:26.683" level="INFO">Opening browser 'headlesschrome' to base url 'http://127.0.0.1:8000'.</msg>
+<msg timestamp="20231223 14:36:33.309" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231223 14:36:33.309" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</msg>
+<status status="FAIL" starttime="20231223 14:36:26.681" endtime="20231223 14:36:33.311"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:33.311" endtime="20231223 14:36:33.311"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:33.311" endtime="20231223 14:36:33.311"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:33.311" endtime="20231223 14:36:33.311"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:33.311" endtime="20231223 14:36:33.311"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:33.311" endtime="20231223 14:36:33.311"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:33.311" endtime="20231223 14:36:33.311"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:36:26.681" endtime="20231223 14:36:33.311"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/create']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:33.313" endtime="20231223 14:36:33.313"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='company']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:33.313" endtime="20231223 14:36:33.314"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231223 14:36:33.314" endtime="20231223 14:36:33.314"/>
+</kw>
+<kw name="Scroll Down Until End">
+<status status="NOT RUN" starttime="20231223 14:36:33.314" endtime="20231223 14:36:33.314"/>
+</kw>
+<status status="FAIL" starttime="20231223 14:36:26.679" endtime="20231223 14:36:33.314">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF666114D02+56194]
+	(No symbol) [0x00007FF6660804B2]
+	(No symbol) [0x00007FF665F276AA]
+	(No symbol) [0x00007FF665F1FB39]
+	(No symbol) [0x00007FF665F125DD]
+	(No symbol) [0x00007FF665F116FD]
+	(No symbol) [0x00007FF665F10746]
+	(No symbol) [0x00007FF665F106EB]
+	(No symbol) [0x00007FF665F0EE3D]
+	(No symbol) [0x00007FF665F0F603]
+	(No symbol) [0x00007FF665F2A0FD]
+	(No symbol) [0x00007FF665FB2C91]
+	(No symbol) [0x00007FF665F95E7A]
+	(No symbol) [0x00007FF665FB2786]
+	(No symbol) [0x00007FF665F95C23]
+	(No symbol) [0x00007FF665F64A45]
+	(No symbol) [0x00007FF665F65AD4]
+	GetHandleVerifier [0x00007FF66648D5BB+3695675]
+	GetHandleVerifier [0x00007FF6664E6197+4059159]
+	GetHandleVerifier [0x00007FF6664DDF63+4025827]
+	GetHandleVerifier [0x00007FF6661AF029+687785]
+	(No symbol) [0x00007FF66608B508]
+	(No symbol) [0x00007FF666087564]
+	(No symbol) [0x00007FF6660876E9]
+	(No symbol) [0x00007FF666078094]
+	BaseThreadInitThunk [0x00007FFC6608257D+29]
+	RtlUserThreadStart [0x00007FFC670CAA58+40]
+</status>
+</test>
+<status status="FAIL" starttime="20231223 14:35:55.263" endtime="20231223 14:36:33.317"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="Test-Suite-1">Test-Suite-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
